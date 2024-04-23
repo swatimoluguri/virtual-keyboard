@@ -1,0 +1,109 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  text-align: center;
+  color: rgb(3, 131, 127);
+}
+.input-area {
+  margin: 10vh 0;
+  text-align: center;
+}
+.input-text{
+    cursor: pointer;
+}
+.input-area textarea {
+  width: 30%;
+  border: 1px solid gray;
+  resize: none;
+}
+.keyboard {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 1vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: auto;
+  background-color: rgb(3, 96, 93);
+  border-radius: 1vw;
+}
+
+.key {
+  font-size: larger;
+  margin: 0.5vw;
+  height: 4vw;
+  width: auto;
+  max-width: 30vw;
+  min-width: 4vw;
+  border-radius: 0.5vw;
+  color: white;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  background-color: rgb(3, 131, 127);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.key:hover {
+  background-color: rgb(5, 143, 138);
+}
+.key-large {
+  width: 10vw;
+}
+.key-extra-large {
+  width: 20vw;
+}
+.darker {
+  background-color: rgb(1, 67, 65);
+}
+.darker:hover {
+  background-color: rgb(2, 81, 79);
+}
+.caps-on {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  height: 1vh;
+  width: 1vh;
+  background-color: rgb(2, 223, 2);
+  border-radius: 50%;
+}
+.caps-off {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  height: 1vh;
+  width: 1vh;
+  background-color: rgb(44, 44, 44);
+  border-radius: 50%;
+}
+@media screen and (max-width: 1000px) {
+    .input-area textarea {
+        width: 70%;
+      }
+  .keyboard {
+    padding: 4vh 0;
+    width: 100%;
+    height: auto;
+  }
+  .key {
+    font-size: large;
+    padding: 0.5vh;
+    height: 5vh;
+  }
+  .key-large {
+    width: 15vw;
+  }
+  .key-extra-large {
+    width: 30vw;
+  }
+  
+}
